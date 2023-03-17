@@ -18,6 +18,6 @@ The AIROC&#8482; CYW20820 Bluetooth&#174; and Bluetooth&#174; LE evaluation kit 
 
 ### Kit Contents
 
-* Base Board - CYW9BTM2BASE1
+* Base Board - CYW9BTM2BASE2
 * CYW920820M2IPA1 Bluetooth&#174; Module Evaluation Board (mounted onto baseboard)
 * USB Standard-A to Micro-B cable

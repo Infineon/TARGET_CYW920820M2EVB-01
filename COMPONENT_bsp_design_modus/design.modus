@@ -47,6 +47,7 @@
                 </Block>
                 <Block location="ioss[0].pin[11]">
                     <Alias value="CYBSP_RSVD9"/>
+                    <Alias value="CYBSP_RSVD_9"/>
                     <Alias value="SPI2_CS"/>
                     <Personality template="20x19_pin" version="1.0">
                         <Param id="Type" value="PERIPHERAL"/>
@@ -108,6 +109,7 @@
                 </Block>
                 <Block location="ioss[0].pin[17]">
                     <Alias value="CYBSP_RSVD7"/>
+                    <Alias value="CYBSP_RSVD_7"/>
                     <Alias value="SPI2_MISO"/>
                     <Alias value="CYBSP_D12"/>
                     <Personality template="20x19_pin" version="1.0">
@@ -260,6 +262,7 @@
                 </Block>
                 <Block location="ioss[0].pin[6]">
                     <Alias value="CYBSP_RSVD6"/>
+                    <Alias value="CYBSP_RSVD_6"/>
                     <Alias value="SPI2_MOSI"/>
                     <Alias value="CYBSP_D11"/>
                     <Personality template="20x19_pin" version="1.0">
@@ -287,6 +290,7 @@
                 </Block>
                 <Block location="ioss[0].pin[9]">
                     <Alias value="CYBSP_RSVD10"/>
+                    <Alias value="CYBSP_RSVD_10"/>
                     <Alias value="SPI2_CLK"/>
                     <Alias value="CYBSP_D13"/>
                     <Personality template="20x19_pin" version="1.0">

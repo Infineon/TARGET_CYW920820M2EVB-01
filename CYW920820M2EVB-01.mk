@@ -1,5 +1,5 @@
 #
-# Copyright 2016-2022, Cypress Semiconductor Corporation (an Infineon company) or
+# Copyright 2016-2023, Cypress Semiconductor Corporation (an Infineon company) or
 # an affiliate of Cypress Semiconductor Corporation.  All rights reserved.
 #
 # This software, including source code, documentation and related
@@ -105,19 +105,19 @@ CY_CORE_DEFINES+=-DCY_PLATFORM_SWDIO=WICED_P03
 #
 # Patch variables
 #
-CY_CORE_PATCH=$(CY_INTERNAL_BASELIB_PATH)/internal/20820A1/patches/patch.elf
-CY_CORE_PATCH_CFLAGS=$(CY_INTERNAL_BASELIB_PATH)/internal/20820A1/gcc/20820A1.cflag
+CY_CORE_PATCH=$(CY_INTERNAL_BASELIB_PATH)/internal/$(CY_TARGET_DEVICE)/patches/patch.elf
+CY_CORE_PATCH_CFLAGS=$(CY_INTERNAL_BASELIB_PATH)/internal/$(CY_TARGET_DEVICE)/gcc/$(CY_TARGET_DEVICE).cflag
 CY_CORE_PATCH_LIB_PATH=libraries/prebuilt
 
 #
 # Variables for pre-build and post-build processing
 #
-CY_CORE_HDF=$(CY_INTERNAL_BASELIB_PATH)/internal/20820A1/configdef20820A1.hdf
+CY_CORE_HDF=$(CY_INTERNAL_BASELIB_PATH)/internal/$(CY_TARGET_DEVICE)/configdef$(CY_TARGET_DEVICE).hdf
 CY_CORE_HCI_ID=$(CY_INTERNAL_BASELIB_PATH)/platforms/CYW208XXA1_IDFILE.txt
 CY_CORE_BTP=$(CY_INTERNAL_BASELIB_PATH)/platforms/208XX_OCF.btp
-CY_CORE_MINIDRIVER=$(CY_INTERNAL_BASELIB_PATH)/platforms/minidriver-20820A1-uart-patchram.hex
+CY_CORE_MINIDRIVER=$(CY_INTERNAL_BASELIB_PATH)/platforms/minidriver-$(CY_TARGET_DEVICE)-uart-patchram.hex
 CY_CORE_CGSLIST=\
-    $(CY_INTERNAL_BASELIB_PATH)/internal/20820A1/patches/patch.cgs\
+    $(CY_INTERNAL_BASELIB_PATH)/internal/$(CY_TARGET_DEVICE)/patches/patch.cgs\
     $(CY_INTERNAL_BASELIB_PATH)/platforms/CYW208XXA1.cgs
 
 #
